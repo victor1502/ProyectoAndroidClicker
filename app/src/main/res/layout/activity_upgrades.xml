@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityUpgrades">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="470dp">
+
+            <LinearLayout
+                android:id="@+id/layoutUpgrade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="#b3b3b3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textUpgrade1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hola"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textDatos1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mejora de Oro por Click"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textCoste1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="50$"
+                        android:textColor="#ffff33"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/buttonUpgrade1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upgrade"
+                        android:onClick="upgrade1Click"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="#b4b4b4"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textUpgrade2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hola"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textDatos2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mejora de Oro Pasivo"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textCoste2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="50$"
+                        android:textColor="#ffff33"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/buttonUpgrade2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upgrade"
+                        android:onClick="upgrade2Click"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="#b3b3b3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textUpgrade3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hola"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textDatos3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mejora de Oro Pasivo"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textCoste3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="50$"
+                        android:textColor="#ffff33"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/buttonUpgrade3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upgrade"
+                        android:onClick="upgrade3Click" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="#b3b3b3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textUpgrade4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hola"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textDatos4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mejora de Oro Pasivo"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textCoste4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="50$"
+                        android:textColor="#ffff33"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/buttonUpgrade4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upgrade"
+                        android:onClick="upgrade4Click"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="#b3b3b3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textUpgrade5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hola"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textDatos5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mejora de Oro Pasivo"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textCoste5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="50$"
+                        android:textColor="#ffff33"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/buttonUpgrade5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upgrade"
+                        android:onClick="upgrade5Click"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linearLayout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="#b3b3b3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textUpgrade6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hola"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textDatos6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mejora de Oro Pasivo"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textCoste6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="50$"
+                        android:textColor="#ffff33"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/buttonUpgrade6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upgrade"
+                        android:onClick="upgrade6Click"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:text="Volver"
+            android:onClick="botonVolver"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
