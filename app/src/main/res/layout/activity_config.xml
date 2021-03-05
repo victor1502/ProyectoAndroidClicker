@@ -12,8 +12,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="136dp"
         android:layout_marginTop="28dp"
-        android:text="Reset Juego"
         android:onClick="reset"
+        android:text="Reset Juego"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textReset" />
 
@@ -85,10 +85,10 @@
         android:id="@+id/buttonVolver"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="156dp"
-        android:layout_marginTop="40dp"
-        android:text="Volver"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="84dp"
         android:onClick="volver"
+        android:text="Volver"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonCuenta" />
 
@@ -96,11 +96,24 @@
         android:id="@+id/buttonLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginBottom="40dp"
-        android:text="Iniciar Sesion"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="84dp"
         android:onClick="ClickIniciar"
+        android:text="Iniciar Sesion"
         app:layout_constraintBottom_toTopOf="@+id/buttonVolver"
-        app:layout_constraintStart_toEndOf="@+id/buttonCuenta" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/buttonCerrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="20dp"
+        android:text="Cerrar Sesion"
+        android:onClick="clickCerrar"
+        app:layout_constraintBottom_toTopOf="@+id/buttonVolver"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

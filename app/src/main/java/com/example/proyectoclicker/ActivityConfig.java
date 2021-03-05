@@ -115,11 +115,27 @@ public class ActivityConfig extends AppCompatActivity {
         Cursor c = dbLogin.rawQuery("SELECT * FROM Cuenta WHERE Username = '"+username+"' AND Password = '"+password+"'",null);
 
         if(c.moveToFirst()){
-            dbLogin.execSQL("UPDATE Cuenta SET Iniciada = 1 WHERE Username = '"+username+"' AND Password = '"+password+"'");
-
+            Cursor cur = dbLogin.rawQuery("SELECT Username FROM Cuenta WHERE Iniciada = 1",null);
+            if(cur != null && cur.getCount() > 0) {
+                cur.moveToFirst();
+                dbLogin.execSQL("UPDATE Cuenta SET Iniciada = 0 WHERE Username = '" + cur.getString(0)+"'");
+            }
+            dbLogin.execSQL("UPDATE Cuenta SET Iniciada = 1 WHERE Username = '" + username + "' AND Password = '" + password + "'");
         }
         else{
             Toast.makeText(this,"NO EXISTE EL USUARIO",Toast.LENGTH_LONG).show();
+        }
+    }
+
+    public void clickCerrar(View view) {
+        Cursor c = dbLogin.rawQuery("SELECT Username FROM Cuenta WHERE Iniciada = 1",null);
+
+        if(c != null && c.getCount() > 0){
+            c.moveToFirst();
+            dbLogin.execSQL("UPDATE Cuenta SET Iniciada = 0 WHERE Username = '" + c.getString(0)+"'");
+        }
+        else{
+            Log.i("Salir fallo", "No tienes sesion iniciada");
         }
     }
 }
